@@ -35,6 +35,10 @@ module.exports = {
         new MiniCssExtractPlugin ({
             filename: 'style.css'
         })
-    ]
+    ],
+    devServer: {
+        port: 7777
+    },
+    devtool: 'cheap-eval-source-map'
     }
 

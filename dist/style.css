@@ -1,0 +1,11 @@
+* {
+    background-color: #777;
+    color: #afa;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+}
+button {
+    cursor: pointer;
+}
