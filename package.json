@@ -20,7 +20,10 @@
     "url": "https://github.com/vassiliy278/goit-js-hw-10-food-service/issues"
   },
   "homepage": "https://github.com/vassiliy278/goit-js-hw-10-food-service#readme",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",

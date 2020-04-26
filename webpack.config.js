@@ -1,7 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Handlebars = require("handlebars");
+const template = Handlebars.compile("Name: {{name}}");
+console.log(template({ name: "Nils" }));
 
 console.log(`dirname: ${__dirname}`)
 
@@ -21,6 +24,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'] //работает справа налево
+            },
+            {   test: /\.hbs$/,
+                loader: "handlebars-loader"
             }
 
         ]
