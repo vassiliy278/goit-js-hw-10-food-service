@@ -1,2 +1,2 @@
 # goit-js-hw-10-food-service
-homework_10
+First project builded w Webpack
